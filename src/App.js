@@ -14,19 +14,19 @@ function App() {
     
       <Navbar/>
       
-      <Route exact path="/">
+      <Route exact path="/PageResume/">
         <Home/>
       </Route>
-      <Route exact path="/About">
+      <Route exact path="/PageResume/About">
         <About/>
       </Route>
-      <Route exact path="/education">
+      <Route exact path="/PageResume/education">
         <Education/>
       </Route>
-      <Route exact path="/skill">
+      <Route exact path="/PageResume/skill">
         <Skill/>
       </Route>
-      <Route exact path="/contact">
+      <Route exact path="/PageResume/contact">
         <Contact/>
       </Route>
 
