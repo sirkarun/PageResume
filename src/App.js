@@ -7,6 +7,7 @@ import About from './About';
 import Education from './Education';
 import Skill from './Skill';
 import Contact from './Contact';
+import Workexp from './Workexp';
 function App() {
   return (
     <Router>
@@ -14,19 +15,22 @@ function App() {
     
       <Navbar/>
       
-      <Route exact path="/PageResume/">
+      <Route exact path="/">
         <Home/>
       </Route>
-      <Route exact path="/PageResume/About">
+      <Route exact path="/About">
         <About/>
       </Route>
-      <Route exact path="/PageResume/education">
+      <Route exact path="/Workexp">
+        <Workexp/>
+      </Route>
+      <Route exact path="/education">
         <Education/>
       </Route>
-      <Route exact path="/PageResume/skill">
+      <Route exact path="/skill">
         <Skill/>
       </Route>
-      <Route exact path="/PageResume/contact">
+      <Route exact path="/contact">
         <Contact/>
       </Route>
 

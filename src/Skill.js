@@ -2,7 +2,7 @@ import React,{useState} from "react";
 
 function Skill(){
 
-    const [skills] =useState(['Html','C#','X++','Angular','PHP','React']);
+    const [skills] =useState(['Html','C#','X++','Angular','PHP','React','Flutter','Sql','Javascript','git']);
 
     return(
         <div className="condiv skills">
