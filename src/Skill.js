@@ -1,19 +1,43 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 
-function Skill(){
+function Skill() {
+  const [skills] = useState({
+    Frontend: [
+      "React",
+      "Vue",
+      "Angular",
+      "TypeScript",
+      "JavaScript",
+      "Ant Design",
+      "Vuetify",
+    ],
+    Backend: [".NET 9", "Node.js", "Go", "Python"],
+    Database: ["SQL Server", "PostgreSQL"],
+    "DevOps & Tools": [
+      "Docker",
+      "Git",
+      "CI/CD",
+      "Azure Functions",
+      "Blob Storage",
+    ],
+    Testing: ["MSTest"],
+  });
 
-    const [skills] =useState(['Html','C#','X++','Angular','PHP','React','Flutter','Sql','Javascript','git']);
-
-    return(
-        <div className="condiv skills">
-            <h1 className="subtopic">My Skills</h1>
-            <ul>
-                {skills.map((value)=>
-                {
-                    return <li>{value}</li>
-                }) }
-            </ul>
+  return (
+    <div className="condiv skills">
+      <h1 className="subtopic">My Skills</h1>
+      {Object.entries(skills).map(([category, categorySkills]) => (
+        <div key={category}>
+          <h3>{category}</h3>
+          <ul>
+            {categorySkills.map((skill) => (
+              <li key={skill}>{skill}</li>
+            ))}
+          </ul>
         </div>
-    )
+      ))}
+    </div>
+  );
 }
-export default Skill
+
+export default Skill;
